@@ -1,0 +1,74 @@
+PS C:\Users\makijames\Documents\PnP> py BUC_Settings.py
+Found BUC_Config.txt in C:\Users\makijames\Documents\PnP
+Enter Scenario #:200
+Waiting for device...
+android.hardware.power@1.3::IPower/default does not exist, or no permission to connect.
+
+================================================================================================    
+starting pnp
+Traceback (most recent call last):
+  File "C:\ProgramData\chocolatey\lib\fb-pnp-windows\bin\pnp.par\.bootstrap\_pex\pex.py", line 331, in execute
+    self._wrap_coverage(self._wrap_profiling, self._execute)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\ProgramData\chocolatey\lib\fb-pnp-windows\bin\pnp.par\.bootstrap\_pex\pex.py", line 264, in _wrap_coverage
+    runner(*args)
+    ~~~~~~^^^^^^^
+  File "C:\ProgramData\chocolatey\lib\fb-pnp-windows\bin\pnp.par\.bootstrap\_pex\pex.py", line 296, in _wrap_profiling
+    runner(*args)
+    ~~~~~~^^^^^^^
+  File "C:\ProgramData\chocolatey\lib\fb-pnp-windows\bin\pnp.par\.bootstrap\_pex\pex.py", line 374, in _execute
+    return self.execute_entry(self._pex_info.entry_point)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\ProgramData\chocolatey\lib\fb-pnp-windows\bin\pnp.par\.bootstrap\_pex\pex.py", line 432, in execute_entry
+    runner(entry_point)
+    ~~~~~~^^^^^^^^^^^^^
+  File "C:\ProgramData\chocolatey\lib\fb-pnp-windows\bin\pnp.par\.bootstrap\_pex\pex.py", line 437, in execute_module
+    runpy.run_module(module_name, run_name='__main__')
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen runpy>", line 229, in run_module
+  File "<frozen runpy>", line 88, in _run_code
+    from arvr.projects.bolt.tools.pnp.pnp_cpu_analyzer import (
+    ...<2 lines>...
+    )
+  File "c:\users\makijames\.pex\code\b70be5c10cd07d7546dc847c0be203b4964e61fa\arvr\projects\bolt\tools\pnp\pnp_cpu_analyzer.py", line 10, in <module>
+    import pandas as pd
+  File "C:\Users\makijames\.pex\code\b70be5c10cd07d7546dc847c0be203b4964e61fa\pandas\__init__.py", line 16, in <module>
+    raise ImportError(
+        "Unable to import required dependencies:\n" + "\n".join(_missing_dependencies)
+    )
+ImportError: Unable to import required dependencies:
+numpy:
+
+IMPORTANT: PLEASE READ THIS FOR ADVICE ON HOW TO SOLVE THIS ISSUE!
+
+Importing the numpy C-extensions failed. This error can happen for
+many reasons, often due to issues with your setup or how NumPy was
+installed.
+
+We have compiled some common reasons and troubleshooting tips at:
+
+    https://numpy.org/devdocs/user/troubleshooting-importerror.html
+
+Please note and check the following:
+
+  * The Python version is: Python3.13 from "C:\Users\makijames\Documents\PnP\.venv\Scripts\python.exe"
+  * The NumPy version is: "1.24.4"
+
+and make sure that they are the versions you expect.
+Please carefully study the documentation linked above for further help.
+
+Original error was: No module named 'numpy.core._multiarray_umath'
+
+Calculating CPU Memory Usage
+
+Summary:
+Memory Used: 7712.7 MB
+Memory Used %: 97.28%
+Cleaning up after test run.
+Entering extract_nugpu_avg_value function
+Trying to open gpu_stats_summary.json file
+File opened successfully
+JSON data loaded successfully
+Recursive search complete
+Key 'nugpuAvg' found with largest value: 3707.8427197719748
+Press any button to reboot or 'n' to skip...n
